@@ -27,7 +27,7 @@
           <input type="text" class="form-control" placeholder="Client" formControlName="client">
         </div>
       </div>
-      <div class="alert" *ngIf="!form.controls['client'].valid && form.controls['client'].touched">Ce champ doit contenir au moins 5 caractères </div>
+      <div class="alert" *ngIf="!form.controls['client'].valid && form.controls['client'].touched">Ce champ doit contenir au moins 3 caractères </div>
 
 
       <div class="form-group">
@@ -82,24 +82,26 @@
 <ng-template #forminfo>
   <div class="jumbotron">
     <h3>Facture N°: {{numFacture}}</h3>
-    <h5>Date facture: {{dateFacture}}</h5> 
-    
+    <label class="marge">Date facture:  </label> {{dateFacture}}<br>
 
-    <h5>Client: {{client}}</h5>
+    <label class="marge">Client:  </label> {{client}}<br>
 
-    <h5>Désignation: {{designation}}</h5>
+    <label class="marge">Désignation:  </label> {{designation}}<br>
 
-    <h5>Quantité: {{quantite}}</h5>
+    <label class="marge">Quantité:  </label> {{quantite}}<br>
 
-    <h5>Prix unitaire HT: {{prixunitHT}}</h5>
+    <label class="marge">Prix unitaire HT:  </label> {{prixunitHT}}<br>
 
-    <h5>TVA %: {{tva}}</h5>
+    <label class="marge">TVA %:  </label> {{tva}}<br>
 
-    <h5>Total HT: {{totalHT}}</h5>
+    <label class="marge">Total HT:  </label> {{totalHT}}<br>
 
-    <h5>Montant du TVA: {{montantTVA}}</h5>
+    <label class="marge">Montant du TVA:  </label> {{montantTVA}}<br>
 
-    <h5>Total TTC: {{totalTTC}}</h5>
+    <label class="marge">Total TTC:  </label> {{totalTTC}}<br>
+
+    <p class=pull-right><button class="btn btn-primary"  >Editer</button></p>
+      
 
   </div>
 </ng-template>

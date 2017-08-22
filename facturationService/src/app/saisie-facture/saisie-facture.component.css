@@ -26,15 +26,19 @@ input
     }
 }
 
-h5{
+.jumbotron{
+     
+  width: 700px;
+  height: 500px;
+  
+}
+.text-success{
+    font-size: .60em;
     margin-left: 30px;
 }
 
-.jumbotron{
-     
-  width: 750px;
-  height: 500px;
-  
-
+.marge{
+     margin-left: 40px;
+     color:#009080;
 
 }

@@ -8,12 +8,14 @@ import { routes} from './app.router';
 import { AppComponent } from './app.component';
 import { SaisieFactureComponent } from './saisie-facture/saisie-facture.component';
 import { RechercheFactureComponent } from './recherche-facture/recherche-facture.component';
+import { ListeFacturesComponent } from './liste-factures/liste-factures.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SaisieFactureComponent,
-    RechercheFactureComponent
+    RechercheFactureComponent,
+    ListeFacturesComponent
   ],
   imports: [
     BrowserModule,
